@@ -1,1 +1,1 @@
-# MacOS-Calculqtor
+# MacOS-Calculator
