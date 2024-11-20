@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		26625AA92CEE13E2004C8481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26625A8F2CEE13DF004C8481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26625A962CEE13DF004C8481;
+			remoteInfo = "MacOS-Calculator";
+		};
+		26625AB32CEE13E2004C8481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26625A8F2CEE13DF004C8481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26625A962CEE13DF004C8481;
+			remoteInfo = "MacOS-Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26625A972CEE13DF004C8481 /* MacOS-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacOS-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26625AA82CEE13E2004C8481 /* MacOS-CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MacOS-CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26625AB22CEE13E2004C8481 /* MacOS-CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MacOS-CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		26625A992CEE13DF004C8481 /* MacOS-Calculator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "MacOS-Calculator";
+			sourceTree = "<group>";
+		};
+		26625AAB2CEE13E2004C8481 /* MacOS-CalculatorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "MacOS-CalculatorTests";
+			sourceTree = "<group>";
+		};
+		26625AB52CEE13E2004C8481 /* MacOS-CalculatorUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "MacOS-CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26625A942CEE13DF004C8481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26625AA52CEE13E2004C8481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26625AAF2CEE13E2004C8481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26625A8E2CEE13DF004C8481 = {
+			isa = PBXGroup;
+			children = (
+				26625A992CEE13DF004C8481 /* MacOS-Calculator */,
+				26625AAB2CEE13E2004C8481 /* MacOS-CalculatorTests */,
+				26625AB52CEE13E2004C8481 /* MacOS-CalculatorUITests */,
+				26625A982CEE13DF004C8481 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26625A982CEE13DF004C8481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26625A972CEE13DF004C8481 /* MacOS-Calculator.app */,
+				26625AA82CEE13E2004C8481 /* MacOS-CalculatorTests.xctest */,
+				26625AB22CEE13E2004C8481 /* MacOS-CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26625A962CEE13DF004C8481 /* MacOS-Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26625ABC2CEE13E2004C8481 /* Build configuration list for PBXNativeTarget "MacOS-Calculator" */;
+			buildPhases = (
+				26625A932CEE13DF004C8481 /* Sources */,
+				26625A942CEE13DF004C8481 /* Frameworks */,
+				26625A952CEE13DF004C8481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				26625A992CEE13DF004C8481 /* MacOS-Calculator */,
+			);
+			name = "MacOS-Calculator";
+			packageProductDependencies = (
+			);
+			productName = "MacOS-Calculator";
+			productReference = 26625A972CEE13DF004C8481 /* MacOS-Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26625AA72CEE13E2004C8481 /* MacOS-CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26625ABF2CEE13E2004C8481 /* Build configuration list for PBXNativeTarget "MacOS-CalculatorTests" */;
+			buildPhases = (
+				26625AA42CEE13E2004C8481 /* Sources */,
+				26625AA52CEE13E2004C8481 /* Frameworks */,
+				26625AA62CEE13E2004C8481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26625AAA2CEE13E2004C8481 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				26625AAB2CEE13E2004C8481 /* MacOS-CalculatorTests */,
+			);
+			name = "MacOS-CalculatorTests";
+			packageProductDependencies = (
+			);
+			productName = "MacOS-CalculatorTests";
+			productReference = 26625AA82CEE13E2004C8481 /* MacOS-CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26625AB12CEE13E2004C8481 /* MacOS-CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26625AC22CEE13E2004C8481 /* Build configuration list for PBXNativeTarget "MacOS-CalculatorUITests" */;
+			buildPhases = (
+				26625AAE2CEE13E2004C8481 /* Sources */,
+				26625AAF2CEE13E2004C8481 /* Frameworks */,
+				26625AB02CEE13E2004C8481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26625AB42CEE13E2004C8481 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				26625AB52CEE13E2004C8481 /* MacOS-CalculatorUITests */,
+			);
+			name = "MacOS-CalculatorUITests";
+			packageProductDependencies = (
+			);
+			productName = "MacOS-CalculatorUITests";
+			productReference = 26625AB22CEE13E2004C8481 /* MacOS-CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26625A8F2CEE13DF004C8481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					26625A962CEE13DF004C8481 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					26625AA72CEE13E2004C8481 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 26625A962CEE13DF004C8481;
+					};
+					26625AB12CEE13E2004C8481 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 26625A962CEE13DF004C8481;
+					};
+				};
+			};
+			buildConfigurationList = 26625A922CEE13DF004C8481 /* Build configuration list for PBXProject "MacOS-Calculator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26625A8E2CEE13DF004C8481;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 26625A982CEE13DF004C8481 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26625A962CEE13DF004C8481 /* MacOS-Calculator */,
+				26625AA72CEE13E2004C8481 /* MacOS-CalculatorTests */,
+				26625AB12CEE13E2004C8481 /* MacOS-CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26625A952CEE13DF004C8481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26625AA62CEE13E2004C8481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26625AB02CEE13E2004C8481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26625A932CEE13DF004C8481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26625AA42CEE13E2004C8481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26625AAE2CEE13E2004C8481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26625AAA2CEE13E2004C8481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26625A962CEE13DF004C8481 /* MacOS-Calculator */;
+			targetProxy = 26625AA92CEE13E2004C8481 /* PBXContainerItemProxy */;
+		};
+		26625AB42CEE13E2004C8481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26625A962CEE13DF004C8481 /* MacOS-Calculator */;
+			targetProxy = 26625AB32CEE13E2004C8481 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26625ABA2CEE13E2004C8481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26625ABB2CEE13E2004C8481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		26625ABD2CEE13E2004C8481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MacOS-Calculator/MacOS_Calculator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacOS-Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = 7D453EK3R2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "guliveer.MacOS-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26625ABE2CEE13E2004C8481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MacOS-Calculator/MacOS_Calculator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacOS-Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = 7D453EK3R2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "guliveer.MacOS-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		26625AC02CEE13E2004C8481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D453EK3R2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "guliveer.MacOS-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacOS-Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacOS-Calculator";
+			};
+			name = Debug;
+		};
+		26625AC12CEE13E2004C8481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D453EK3R2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "guliveer.MacOS-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacOS-Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacOS-Calculator";
+			};
+			name = Release;
+		};
+		26625AC32CEE13E2004C8481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D453EK3R2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "guliveer.MacOS-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "MacOS-Calculator";
+			};
+			name = Debug;
+		};
+		26625AC42CEE13E2004C8481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7D453EK3R2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "guliveer.MacOS-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "MacOS-Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26625A922CEE13DF004C8481 /* Build configuration list for PBXProject "MacOS-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26625ABA2CEE13E2004C8481 /* Debug */,
+				26625ABB2CEE13E2004C8481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26625ABC2CEE13E2004C8481 /* Build configuration list for PBXNativeTarget "MacOS-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26625ABD2CEE13E2004C8481 /* Debug */,
+				26625ABE2CEE13E2004C8481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26625ABF2CEE13E2004C8481 /* Build configuration list for PBXNativeTarget "MacOS-CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26625AC02CEE13E2004C8481 /* Debug */,
+				26625AC12CEE13E2004C8481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26625AC22CEE13E2004C8481 /* Build configuration list for PBXNativeTarget "MacOS-CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26625AC32CEE13E2004C8481 /* Debug */,
+				26625AC42CEE13E2004C8481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26625A8F2CEE13DF004C8481 /* Project object */;
+}
