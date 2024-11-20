@@ -1,3 +1,13 @@
+![macOS](https://img.shields.io/badge/macOS-white?style=for-the-badge&logo=apple&logoColor=black)
+![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=xcode&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-orange?style=for-the-badge&logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-33c5ff?style=for-the-badge&logo=swift&logoColor=white)
+
+![GitHub Created At](https://img.shields.io/github/created-at/Guliveer/MacOS-Calculator?style=for-the-badge)
+
+![GitHub Release](https://img.shields.io/github/v/release/Guliveer/MacOS-Calculator?include_prereleases&style=for-the-badge&color=green)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/Guliveer/MacOS-Calculator/latest?style=for-the-badge)
+
 # MacOS-Calculator 🎛️
 
 **MacOS-Calculator** is my attempt to clone Apple's macOS calc. The app utilizes SwiftUI technologies, offering a clean and functional design for basic arithmetic operations.
@@ -24,7 +34,7 @@
 3. **Run the app:**
    Once the project is open in Xcode, press `Cmd + R` to build and run the app on the simulator or a real device.
 
-   ### Or download by clicking [here](https://github.com/Guliveer/MacOS-Calculator/releases/latest/download/release.zip) or through the releases section.
+   ### You can also download by clicking [here](https://github.com/Guliveer/MacOS-Calculator/releases/latest/download/macos-calc-clone.zip) or through the releases section.
 
 ## 👁️ Take a quick look
 
