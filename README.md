@@ -8,7 +8,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/Guliveer/MacOS-Calculator?include_prereleases&style=for-the-badge&color=green)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/Guliveer/MacOS-Calculator/latest?style=for-the-badge)
 
-![GitHub Downloads (specific asset, latest release)](https://img.shields.io/github/downloads/Guliveer/MacOS-Calculator/latest/macos-calc-clone.zip?style=social&logo=GitHub&label=Download%40latest&link=https%3A%2F%2Fgithub.com%2FGuliveer%2FMacOS-Calculator%2Freleases%2Flatest%2Fdownload%2Fmacos-calc-clone.zip)
+![GitHub Downloads (specific asset, latest release)](https://img.shields.io/github/downloads/Guliveer/MacOS-Calculator/latest/macos-calc-clone.zip?style=social&logo=GitHub&label=Download%40latest&link=https%3A%2F%2Fgithub.com%2FGuliveer%2FMacOS-Calculator%2Freleases%2Flatest%2Fdownload%2Fmacos-calc-clone.zip&link=https%3A%2F%2Fgithub.com%2FGuliveer%2FMacOS-Calculator%2Freleases)
 
 
 # MacOS-Calculator 🎛️
