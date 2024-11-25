@@ -8,6 +8,8 @@
 ![GitHub Release](https://img.shields.io/github/v/release/Guliveer/MacOS-Calculator?include_prereleases&style=for-the-badge&color=green)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/Guliveer/MacOS-Calculator/latest?style=for-the-badge)
 
+[![GitHub Downloads (specific asset, latest release)](https://img.shields.io/github/downloads/Guliveer/MacOS-Calculator/latest/macos-calc-clone.zip?style=social&logo=GitHub&label=Download%40latest)](https://github.com/Guliveer/MacOS-Calculator/releases/latest/download/macos-calc-clone.zip)
+
 # MacOS-Calculator 🎛️
 
 **MacOS-Calculator** is my attempt to clone Apple's macOS calc. The app utilizes SwiftUI technologies, offering a clean and functional design for basic arithmetic operations.
