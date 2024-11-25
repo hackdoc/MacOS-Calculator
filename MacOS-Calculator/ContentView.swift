@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     @State var display = "0"
     @State var firstOperand: Double?
     @State var currentOperation: String?
     @State var shouldResetDisplay = false
+    @State private var activeKey: String? = nil
 
     let buttons: [[String]] = [
         ["C", "+/-", "%", "/"],
@@ -36,6 +38,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .padding(.horizontal)
+                    .background(.clear)
 
                 // Buttons Grid
                 ForEach(buttons, id: \.self) { row in
@@ -50,7 +53,6 @@ struct ContentView: View {
                             }.background(buttonColor(for: button))
                                 .cornerRadius(100)
                         }
-                        //.clipShape(Circle())
                     }
                 }
             }
@@ -58,13 +60,15 @@ struct ContentView: View {
         .frame(width: 400, height: 510)
         .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
             NSEvent.addLocalMonitorForEvents(matching: .keyDown) { event in
-                handleKeyPress(event: event)
+                if event.type == .keyDown { // Filter only keyDown event
+                    handleKeyPress(event: event)
+                }
                 return event
             }
         }
     }
     
-    // Kolory przycisków
+    // Buttons' colors
     func buttonColor(for button: String) -> Color {
         if ["+", "-", "x", "/", "="].contains(button) {
             return Color.orange
@@ -75,19 +79,22 @@ struct ContentView: View {
         }
     }
     
-    // Obsługa klawiatury
+    // Handling keyboard
     func handleKeyPress(event: NSEvent) {
         guard let characters = event.characters else { return }
 
-        switch characters {
-        case "0"..."9", ".", "+", "-", "/", "*", "x", "=":
-            buttonTapped(characters == "*" ? "x" : characters) // Zamień "*" na "x"
-        case "c", "C":
-            buttonTapped("C")
-        case "\r": // Enter
-            buttonTapped("=")
-        default:
-            break
+        let validKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "/", "x", "*", "=", "\r"]
+        if validKeys.contains(characters) {
+            let normalizedKey = characters == "*" ? "x" : (characters == "\r" ? "=" : characters)
+            
+            // Set active key (for visuals)
+            activeKey = normalizedKey
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                activeKey = nil
+            }
+            
+            // Button handling
+            buttonTapped(normalizedKey)
         }
     }
 }

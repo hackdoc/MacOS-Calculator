@@ -7,52 +7,41 @@
 
 extension ContentView {
     func buttonTapped(_ button: String) {
-        if let number = Int(button) {
+        if "0"..."9" ~= button || button == "." {
             if shouldResetDisplay {
-                display = "\(number)"
+                display = button == "." ? "0." : button
                 shouldResetDisplay = false
             } else {
-                display = display == "0" ? "\(number)" : display + "\(number)"
+                display = display == "0" && button != "." ? button : display + button
             }
-        } else {
-            switch button {
-            case "C":
-                display = "0"
-                firstOperand = nil
-                currentOperation = nil
-                shouldResetDisplay = false
-            case "+", "-", "x", "/":
-                firstOperand = Double(display)
-                currentOperation = button
-                shouldResetDisplay = true
-            case "=":
-                if let firstOperand = firstOperand, let currentOperation = currentOperation {
-                    let secondOperand = Double(display) ?? 0
-                    let result: Double
-
-                    switch currentOperation {
-                    case "+":
-                        result = firstOperand + secondOperand
-                    case "-":
-                        result = firstOperand - secondOperand
-                    case "x":
-                        result = firstOperand * secondOperand
-                    case "/":
-                        result = secondOperand == 0 ? 0 : firstOperand / secondOperand
-                    default:
-                        return
-                    }
-
-                    display = "\(result)"
-                    self.firstOperand = nil
-                    self.currentOperation = nil
-                }
-            case ".":
-                if !display.contains(".") {
-                    display += "."
-                }
-            default:
-                break
+        } else if ["+", "-", "x", "/"].contains(button) {
+            currentOperation = button
+            firstOperand = Double(display)
+            shouldResetDisplay = true
+        } else if button == "=" {
+            guard let firstOperand = firstOperand, let currentOperation = currentOperation, let secondOperand = Double(display) else { return }
+            switch currentOperation {
+            case "+": display = "\(firstOperand + secondOperand)"
+            case "-": display = "\(firstOperand - secondOperand)"
+            case "x": display = "\(firstOperand * secondOperand)"
+            case "/": display = secondOperand != 0 ? "\(firstOperand / secondOperand)" : "Error"
+            default: break
+            }
+            self.firstOperand = nil
+            self.currentOperation = nil
+            shouldResetDisplay = true
+        } else if button == "C" {
+            display = "0"
+            firstOperand = nil
+            currentOperation = nil
+            shouldResetDisplay = false
+        } else if button == "+/-" {
+            if let value = Double(display) {
+                display = "\(value * -1)"
+            }
+        } else if button == "%" {
+            if let value = Double(display) {
+                display = "\(value / 100)"
             }
         }
     }

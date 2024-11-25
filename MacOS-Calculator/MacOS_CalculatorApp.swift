@@ -8,11 +8,19 @@
 import SwiftUI
 
 @main
-struct MacOS_Calculator: App {
+struct MacOS_CalculatorApp: App {
+    init() {
+        // Set permanent dark mode
+        NSApplication.shared.appearance = NSAppearance(named: .vibrantDark)
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView() // Główny widok aplikacji
+            ContentView()
+        }
+        .windowStyle(HiddenTitleBarWindowStyle()) // Integrated titlebar
+        .commands {
+            CommandGroup(replacing: .windowSize) {} // Disable window resizing
         }
     }
 }
-
