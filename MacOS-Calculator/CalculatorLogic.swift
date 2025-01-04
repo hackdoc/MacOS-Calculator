@@ -5,6 +5,8 @@
 //  Created by Oliwer Pawelski on 20/11/2024.
 //
 
+import Foundation
+
 extension ContentView {
     func buttonTapped(_ button: String) {
         if "0"..."9" ~= button || button == "." {
@@ -14,35 +16,8 @@ extension ContentView {
             } else {
                 display = display == "0" && button != "." ? button : display + button
             }
-        } else if ["+", "-", "x", "/"].contains(button) {
-            currentOperation = button
-            firstOperand = Double(display)
-            shouldResetDisplay = true
-        } else if button == "=" {
-            guard let firstOperand = firstOperand, let currentOperation = currentOperation, let secondOperand = Double(display) else { return }
-            switch currentOperation {
-            case "+": display = "\(firstOperand + secondOperand)"
-            case "-": display = "\(firstOperand - secondOperand)"
-            case "x": display = "\(firstOperand * secondOperand)"
-            case "/": display = secondOperand != 0 ? "\(firstOperand / secondOperand)" : "Error"
-            default: break
-            }
-            self.firstOperand = nil
-            self.currentOperation = nil
-            shouldResetDisplay = true
-        } else if button == "C" {
-            display = "0"
-            firstOperand = nil
-            currentOperation = nil
-            shouldResetDisplay = false
-        } else if button == "+/-" {
-            if let value = Double(display) {
-                display = "\(value * -1)"
-            }
-        } else if button == "%" {
-            if let value = Double(display) {
-                display = "\(value / 100)"
-            }
+        } else {
+            operationTapped(button)
         }
     }
 
@@ -101,18 +76,43 @@ extension ContentView {
         if let firstOperand = firstOperand,
            let secondOperand = Double(display),
            let operation = currentOperation {
+            var outcome = "Error"
+            
             switch operation {
             case "+":
-                display = String(firstOperand + secondOperand)
+                outcome = String(firstOperand + secondOperand)
             case "-":
-                display = String(firstOperand - secondOperand)
+                outcome = String(firstOperand - secondOperand)
             case "x":
-                display = String(firstOperand * secondOperand)
+                outcome = String(firstOperand * secondOperand)
             case "/":
-                display = secondOperand != 0 ? String(firstOperand / secondOperand) : "Error"
+                if secondOperand != 0 {
+                    outcome = String(firstOperand / secondOperand)
+                }
             default:
                 break
             }
+            
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            formatter.minimumFractionDigits = 0
+            formatter.maximumFractionDigits = 2
+            formatter.locale = Locale(identifier: "en_US") // Enforce using `.` as separator
+            
+            var outcomeDouble = 0.0
+            
+            if outcome != "Error" {
+                outcomeDouble = Double(outcome)!
+            }
+
+            if let formattedNumber = formatter.string(from: NSNumber(value: outcomeDouble)) {
+                if outcome != "Error" {
+                    display = String(formattedNumber)
+                } else {
+                    display = outcome
+                }
+            }
+            
             self.firstOperand = nil
             self.currentOperation = nil
             self.shouldResetDisplay = true
