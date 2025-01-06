@@ -99,14 +99,13 @@ extension ContentView {
             formatter.minimumFractionDigits = 0
             formatter.maximumFractionDigits = 2
 
-            //let idioma = Bundle.main.preferredLocalizations[0] // This is the app language
-             let idioma = NSLocale.current.identifier  // This is the device (macOS) language
-             if idioma.contains("ES") {
-                 formatter.locale = Locale(identifier: "es_ES") // Enforce using `,` as thousands separator and '.' as decimal separator
-             }
-             else {
-                 formatter.locale = Locale(identifier: "en_EN") // Enforce using `.` as thousands separator and ',' as decimal separator
-             }
+            formatter.locale = Locale(identifier: "en_US") // Enforce using `.` as decimal separator
+            // Because of current data input logic `.` has to be a decimal separator (I'll maybe fix this later).
+            // [Example and explanation]
+            // When the result is 0,5 and you try to add 1 (i.e. 0,5+1) you don't include that 0,5
+            //   in calculation because `,` is not interpreted correctly.
+            // Therefore if you want to include previous result (which includes decimals) in your next calculation
+            //   it has to have `.` rather than `,`
             
             var outcomeDouble = 0.0
             
