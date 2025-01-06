@@ -15,12 +15,26 @@ struct MacOS_CalculatorApp: App {
     }
 
     var body: some Scene {
-        WindowGroup {
+        
+//        WindowGroup { // File -> New Window opens a new calculator
+        
+        Window("", id: "calc") { // Single windo app, app exits when closing main window
+                
             ContentView()
         }
-        .windowStyle(HiddenTitleBarWindowStyle()) // Integrated titlebar
-        .commands {
-            CommandGroup(replacing: .windowSize) {} // Disable window resizing
-        }
+        
+//      .defaultSize(width: 400, height: 510)
+        
+        // Integrated titlebar without text, comment this line to have app name in TitleBar
+        .windowStyle(HiddenTitleBarWindowStyle())
+        
+               // Comment .commands block, window is resizable despite this command
+//                .commands {
+//                    CommandGroup(replacing: .windowSize) {} // Disable window resizing
+//                }
+        
+                // To have a truly non-resizable window
+                .windowResizability(.contentSize) // Set the resizability option to the content size
     }
+    
 }

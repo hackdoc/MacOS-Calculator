@@ -83,8 +83,9 @@ struct ContentView: View {
     func handleKeyPress(event: NSEvent) {
         guard let characters = event.characters else { return }
 
-        let validKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "/", "x", "*", "=", "\r"]
-        if validKeys.contains(characters) {
+        // Add "C" and "c" to capture uppercase and lowercase c from keyboard
+        let validKeys = ["C", "c", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "/", "x", "*", "=", "\r"]
+                         if validKeys.contains(characters) {
             let normalizedKey = characters == "*" ? "x" : (characters == "\r" ? "=" : characters)
             
             // Set active key (for visuals)

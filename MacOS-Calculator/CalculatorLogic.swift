@@ -32,7 +32,8 @@ extension ContentView {
 
     func operationTapped(_ operation: String) {
         switch operation {
-        case "C":
+        // Add "c" to capture uppercase and lowercase c from keyboard
+        case "C","c":
             clear()
         case "+/-":
             toggleSign()
@@ -97,7 +98,15 @@ extension ContentView {
             formatter.numberStyle = .decimal
             formatter.minimumFractionDigits = 0
             formatter.maximumFractionDigits = 2
-            formatter.locale = Locale(identifier: "en_US") // Enforce using `.` as separator
+
+            //let idioma = Bundle.main.preferredLocalizations[0] // This is the app language
+             let idioma = NSLocale.current.identifier  // This is the device (macOS) language
+             if idioma.contains("ES") {
+                 formatter.locale = Locale(identifier: "es_ES") // Enforce using `,` as thousands separator and '.' as decimal separator
+             }
+             else {
+                 formatter.locale = Locale(identifier: "en_EN") // Enforce using `.` as thousands separator and ',' as decimal separator
+             }
             
             var outcomeDouble = 0.0
             
