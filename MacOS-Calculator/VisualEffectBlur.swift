@@ -10,7 +10,8 @@ import SwiftUI
 struct VisualEffectBlur: NSViewRepresentable {
     func makeNSView(context: Context) -> NSVisualEffectView {
         let view = NSVisualEffectView()
-        view.material = .contentBackground
+//        view.material = .contentBackground
+        view.material = .headerView // more transparency than contentBackground
         view.blendingMode = .behindWindow
         view.state = .active
         return view
