@@ -71,11 +71,11 @@ struct ContentView: View {
     // Buttons' colors
     func buttonColor(for button: String) -> Color {
         if ["+", "-", "x", "/", "="].contains(button) {
-            return Color.orange
+            return Color.Orange
         } else if ["C", "+/-", "%"].contains(button) {
-            return Color.gray
+            return Color.Gray
         } else {
-            return Color(red:0.33, green: 0.33, blue: 0.33)
+            return Color.DarkGray
         }
     }
     

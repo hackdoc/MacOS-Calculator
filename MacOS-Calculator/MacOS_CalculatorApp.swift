@@ -18,7 +18,7 @@ struct MacOS_CalculatorApp: App {
         
 //        WindowGroup { // File -> New Window opens a new calculator
         
-        Window("", id: "calc") { // Single windo app, app exits when closing main window
+        Window("MacOS Calculator", id: "calc") { // Single windo app, app exits when closing main window
                 
             ContentView()
         }
@@ -26,7 +26,7 @@ struct MacOS_CalculatorApp: App {
 //      .defaultSize(width: 400, height: 510)
         
         // Integrated titlebar without text, comment this line to have app name in TitleBar
-        .windowStyle(HiddenTitleBarWindowStyle())
+//        .windowStyle(HiddenTitleBarWindowStyle())
         
                // Comment .commands block, window is resizable despite this command
 //                .commands {

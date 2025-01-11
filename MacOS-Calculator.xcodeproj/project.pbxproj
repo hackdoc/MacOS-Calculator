@@ -390,7 +390,7 @@
 		26625ABD2CEE13E2004C8481 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon3;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon5;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "MacOS-Calculator/MacOS_Calculator.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
@@ -418,7 +418,7 @@
 		26625ABE2CEE13E2004C8481 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon3;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon5;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "MacOS-Calculator/MacOS_Calculator.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
