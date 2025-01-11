@@ -38,3 +38,11 @@ struct MacOS_CalculatorApp: App {
     }
     
 }
+
+
+/*
+ Console warnings at build:
+ Failed to get or decode unavailable reasons
+ Can't find or decode disabled use cases
+ Can't find or decode reasons
+ */
